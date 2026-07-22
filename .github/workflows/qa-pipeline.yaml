@@ -8,6 +8,10 @@ on:
 
 #Ejecucion a demanda
     workflow_dispatch:
+
+      pull request:
+        branches:
+          - main
 jobs:
   build:
     runs-on: ubuntu-22.04
